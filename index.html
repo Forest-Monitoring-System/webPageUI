@@ -28,8 +28,8 @@
             var data = snapshot.val();
             // Update your webpage with the new data
             // For example, you can update HTML elements using their IDs
-            document.getElementById('temperature').innerHTML = data.temperature;
-            document.getElementById('humidity').innerHTML = data.humidity;
+            document.getElementById('temperature').innerHTML = data.temperature + " &deg;C";
+            document.getElementById('humidity').innerHTML = data.humidity + "%";
             document.getElementById('smoke').innerHTML = data.smoke_detected;
             document.getElementById('flame').innerHTML = data.flame_detected;
             
